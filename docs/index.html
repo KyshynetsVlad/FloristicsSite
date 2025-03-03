@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Флористика</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="flower-bg">
+        <h1>Флористика – мистецтво квітів</h1>
+    </header>
+    
+    <main class="container">
+        <section class="intro">
+            <h2>Ласкаво просимо!</h2>
+            <p>Ми створюємо унікальні квіткові композиції, які приносять радість та натхнення.</p>
+        </section>
+
+        <section class="about">
+            <h2>Про нас</h2>
+            <p>Наша студія флористики - це місце, де квіти оживають у неймовірних композиціях. Ми любимо створювати букети, які розповідають історії та дарують емоції. Наші флористи - це справжні митці, які вкладають душу в кожну свою роботу.</p>
+        </section>
+        
+        <h2 align="center">Наші роботи</h2>
+        <section class="gallery">
+            <div class="gallery-images">
+                <img src="img/flower1.jpg" alt="Квіткова композиція 1" class="zoomable">
+                <img src="img/flower2.jpg" alt="Квіткова композиція 2" class="zoomable">
+                <img src="img/flower3.jpg" alt="Квіткова композиція 3" class="zoomable">
+                <img src="img/flower4.jpg" alt="Квіткова композиція 4" class="zoomable">
+                <img src="img/flower5.jpg" alt="Квіткова композиція 5" class="zoomable">
+                <img src="img/flower6.jpg" alt="Квіткова композиція 6" class="zoomable">
+                <img src="img/flower7.jpg" alt="Квіткова композиція 7" class="zoomable">
+                <img src="img/flower8.jpg" alt="Квіткова композиція 8" class="zoomable">
+                <img src="img/flower9.jpg" alt="Квіткова композиція 9" class="zoomable">
+                <img src="img/flower10.jpg" alt="Квіткова композиція 10" class="zoomable">
+            </div>
+        </section>
+
+        <section class="contact">
+            <h2>Зв'яжіться з нами</h2>
+            <p id="phone-number">+38 (099) 123-45-67</p>
+            <p>Email: info@floristics.com</p>
+            <button id="contact-btn">Написати нам</button>
+        </section>
+    </main>
+    
+    <footer class="flower-bg">
+        <p>&copy; 2025 Флористика. Всі права захищені.</p>
+    </footer>
+    
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <div id="contact-form" class="contact-form">
+        <div class="contact-form-content">
+            <h2>Зв'яжіться з нами</h2>
+            <form id="contact-form-data">
+                <label for="name">Ім'я:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Повідомлення:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Відправити</button>
+                <button type="button" id="contact-form-close">Закрити</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <p>Дякуємо! Ваш запит відправлено. Ми зв'яжемося з вами найближчим часом.</p>
+            <button id="popup-close">OK</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
