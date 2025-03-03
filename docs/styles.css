@@ -50,6 +50,10 @@ header h1, footer p {
     flex-wrap: wrap;
 }
 
+.gallery-images {
+    text-align: center;
+}
+
 .gallery img {
     width: 200px; /* Фіксована ширина */
     height: 200px; /* Фіксована висота */
@@ -58,6 +62,7 @@ header h1, footer p {
     transition: transform 0.3s ease-in-out;
     animation: fadeInUp 0.5s ease-in-out;
     object-fit: cover; /* Зображення заповнює контейнер, обрізаючи зайве */
+    display: inline-block;
 }
 
 .gallery img:hover {
