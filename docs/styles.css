@@ -130,6 +130,11 @@ header h1, footer p {
     }
 }
 
+#number{
+    color: #333;
+    text-decoration: none;
+}
+
 #contact-btn {
     background-color: #9370DB;
     color: white;
@@ -139,62 +144,10 @@ header h1, footer p {
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s ease;
+    text-decoration: none;
 }
 
 #contact-btn:hover {
-    background-color: #8A2BE2;
-}
-
-.contact-form {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    justify-content: center;
-    align-items: center;
-}
-
-.contact-form-content {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    text-align: left;
-    width: 400px;
-}
-
-.contact-form label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-.contact-form button[type="submit"],
-#contact-form-close {
-    background-color: #9370DB;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-}
-
-.contact-form button[type="submit"]:hover,
-#contact-form-close:hover {
     background-color: #8A2BE2;
 }
 
@@ -212,10 +165,15 @@ header h1, footer p {
 
 .popup-content {
     background-color: white;
-    padding: 20px;
+    padding: 30px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     text-align: center;
+}
+
+.popup-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
 }
 
 #popup-close {

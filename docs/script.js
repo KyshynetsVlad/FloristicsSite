@@ -50,34 +50,11 @@ document.addEventListener("DOMContentLoaded", () => {
     contactFormData.addEventListener("submit", (e) => {
         e.preventDefault();
 
-        const formData = new FormData(contactFormData);
-        const name = formData.get("name");
-        const email = formData.get("email");
-        const message = formData.get("message");
+        // Відправка даних на Formspree
+        contactFormData.submit();
 
-        // Відправка даних на сервер
-        fetch("/send-email", { // Замініть на URL вашого сервера
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify({ name, email, message }),
-        })
-        .then(response => {
-            if (response.ok) {
-                // Закриваємо форму після відправки
-                contactForm.style.display = "none";
-
-                // Показуємо попап
-                popup.style.display = "flex";
-            } else {
-                alert("Помилка відправки. Спробуйте пізніше.");
-            }
-        })
-        .catch(error => {
-            console.error("Помилка:", error);
-            alert("Помилка відправки. Спробуйте пізніше.");
-        });
+        // Показуємо попап
+        popup.style.display = "flex";
     });
 
     popupClose.addEventListener("click", () => {
@@ -95,11 +72,5 @@ document.addEventListener("DOMContentLoaded", () => {
                 section.style.animationPlayState = "running";
             }
         });
-    });
-
-    // Додаємо обробник подій для номера телефону
-    const phoneNumber = document.getElementById("phone-number");
-    phoneNumber.addEventListener("click", () => {
-        window.location.href = "tel:+380991234567";
     });
 });
